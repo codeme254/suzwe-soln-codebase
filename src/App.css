@@ -46,6 +46,9 @@ html {
   margin-right: auto;
   letter-spacing: .8px;
 }
+.nav__navigation{
+  transition: all .6s ease-in-out;
+}
 .nav__list{
   display: flex;
   align-items: center;
@@ -58,6 +61,42 @@ html {
   font-size: 1.8rem;
   text-transform: capitalize;
   color: var(--color-white);
+}
+
+.hamburger{
+  display: none;
+}
+.hamb{
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-white);
+}
+.hamb:not(:last-of-type){
+  margin-bottom: 5px;
+}
+@media screen and (max-width:650px) {
+  .hamburger{
+    display: block;
+  }
+  .nav__navigation{
+    position: absolute;
+    top: 10rem;
+    right: 0;
+  }
+  .nav__list{
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 2rem;
+  }
+  .nav__list >*:not(:last-child){
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .nav__flipper{
+    position: absolute;
+    right: -20rem;
+  }
 }
 /* end of navigation */
 

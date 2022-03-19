@@ -14,7 +14,7 @@ const Hero = () => {
     },
     {
       title: "Cool the earth with greenery, or miss all the scenery.",
-      subtitle: "we should do the best to preserve green.",
+      subtitle: "It is our sole responsibility to do our best to preserve green.",
     },
     {
       title: "Deforestation = Flood = Deadly Disaster",
@@ -26,7 +26,7 @@ const Hero = () => {
     },
   ];
   return (
-    <Carousel interval={3000} stopAutoPlayOnHover="false" navButtonsAlwaysVisible="true">
+    <Carousel interval={3000} stopAutoPlayOnHover="false" navButtonsAlwaysVisible="true" animation="slide" duration={800}>
       {heroTitles.map((item, i) => (
         <SingleHero key={i} title={item.title} subtitle={item.subtitle} />
       ))}
