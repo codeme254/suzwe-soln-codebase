@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* overwriting the default styles and all the common styles */
 *,
 *::after,
@@ -26,9 +26,8 @@ html {
   --color-white: #fff;
 }
 
-
 /* the navigation section */
-.nav{
+.nav {
   position: absolute;
   top: 0;
   left: 0;
@@ -39,81 +38,80 @@ html {
   align-items: center;
   padding: 1rem 2rem;
 }
-.nav__logo{
+.nav__logo {
   color: var(--color-white);
   font-size: 4rem;
   text-transform: capitalize;
   margin-right: auto;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
 }
-.nav__navigation{
-  transition: all .6s ease-in-out;
+.nav__navigation {
+  transition: all 0.6s ease-in-out;
 }
-.nav__list{
+.nav__list {
   display: flex;
   align-items: center;
   list-style: none;
 }
-.nav__list>*:not(:last-child){
+.nav__list > *:not(:last-child) {
   margin-right: 3.5rem;
 }
-.nav__item--link, .nav__item--link:visited{
+.nav__item--link,
+.nav__item--link:visited {
   font-size: 1.8rem;
   text-transform: capitalize;
   color: var(--color-white);
 }
 
-.hamburger{
+.hamburger {
   display: none;
 }
-.hamb{
+.hamb {
   width: 30px;
   height: 3px;
   background-color: var(--color-white);
 }
-.hamb:not(:last-of-type){
+.hamb:not(:last-of-type) {
   margin-bottom: 5px;
 }
-@media screen and (max-width:650px) {
-  .hamburger{
+@media screen and (max-width: 650px) {
+  .hamburger {
     display: block;
   }
-  .nav__navigation{
+  .nav__navigation {
     position: absolute;
     top: 10rem;
     right: 0;
   }
-  .nav__list{
+  .nav__list {
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-evenly;
     padding: 2rem;
   }
-  .nav__list >*:not(:last-child){
+  .nav__list > *:not(:last-child) {
     margin-right: 0;
     margin-bottom: 3rem;
   }
-  .nav__flipper{
+  .nav__flipper {
     position: absolute;
     right: -20rem;
   }
 }
 /* end of navigation */
 
-
 /* hero section of the webpage */
-.hero{
+.hero {
+  position: relative;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .8)),url(../src/assets/images/strawberry.jpg);
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
 }
-
-.hero__title{
+.hero__title {
   font-size: 5rem;
   color: var(--color-white);
   text-align: center;
@@ -123,10 +121,9 @@ html {
   width: clamp(80%, 80%, 80%);
 }
 
-.hero__subtitle{
+.hero__subtitle {
   font-size: 2rem;
   color: var(--color-white);
   text-align: center;
   margin-top: 2rem;
 }
-

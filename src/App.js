@@ -1,7 +1,7 @@
-import './App.css';
+import "./App.css";
 
-import Hero from './components/Hero/Hero';
-import Navigation from './components/Navigation/Navigation';
+import Hero from "./components/Hero/Hero";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
