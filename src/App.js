@@ -1,15 +1,9 @@
 import './App.css';
 
-import Hero from './components/hero/Hero';
-import Educational from './components/educational/educational';
-import Farmerhelp from './components/farmerhelp/FarmerHelp';
-
 function App() {
   return (
     <div className="App">
-      <Hero />
-      <Educational />
-      <Farmerhelp />
+      <h1>Welcome to the solution by suzwe</h1>
     </div>
   );
 }
