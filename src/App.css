@@ -20,11 +20,32 @@ html {
   --color-primary-light: #7ed56f;
   --color-primary-medium: #55c57a;
   --color-primary-dark: #28b485;
+  --color-recom-green: #16db65;
   --color-white: #ccc;
   --color-white-light: #f0f0f0;
   --color-black-light: #333;
   --color-white: #fff;
 }
+
+/* typography and common styles */
+.title {
+  display: flex;
+  flex-direction: column;
+  border-left: 11px solid #111010;
+  padding: 0;
+  padding-left: 5px;
+  width: max-content;
+}
+.title__main {
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+}
+.title__sub {
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+/* end of typography and common styles */
 
 /* the navigation section */
 .nav {
@@ -109,7 +130,7 @@ html {
   align-items: center;
   flex-direction: column;
   background-position: center;
-  background-size: cover; 
+  background-size: cover;
 }
 .hero__title {
   font-size: 5rem;
@@ -127,3 +148,79 @@ html {
   text-align: center;
   margin-top: 2rem;
 }
+
+/* the recommendations and goals section */
+.recom-goals {
+  padding: 2rem;
+  margin-top: 4rem;
+}
+
+.recom-goals__wrapper {
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: repeat(auto-fit, minmax(40%, 1fr)); */
+  margin-top: 6rem;
+}
+
+.recommendation {
+  width: 40vw;
+}
+
+.recommendation__message {
+  line-height: 1.6;
+  letter-spacing: 1.2;
+  margin-bottom: 3rem;
+  text-align: justify;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+.recommendations__button {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--color-recom-green);
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+  color: var(--color-recom-green);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.recommendations__button:hover {
+  background-color: var(--color-recom-green);
+  color: var(--color-white);
+}
+
+.goals {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 4rem;
+}
+
+.goal__header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.goal__header svg {
+  --size: 3rem;
+  width: var(--size);
+  height: var(--size);
+  margin-right: 2rem;
+  fill: var(--color-recom-green);
+}
+
+.goal__header--goal-name {
+  justify-self: flex-start;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+}
+
+.goal__description {
+  text-align: justify;
+}
+
+/* end of the recommendations and goals section */
