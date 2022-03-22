@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 /* overwriting the default styles and all the common styles */
 *,
 *::after,
@@ -8,7 +7,7 @@
   padding: 0;
   box-sizing: inherit;
   text-decoration: none;
-  font-family: "Nunito", "Verdana";
+  font-family: "Poppins", "Arial", sans-serif;
   font-size: 1.5rem;
   /* font-weight: 400; */
 }
@@ -24,4 +23,107 @@ html {
   --color-white: #ccc;
   --color-white-light: #f0f0f0;
   --color-black-light: #333;
+  --color-white: #fff;
+}
+
+/* the navigation section */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: clamp(100%, 100%, 100%);
+  background-color: transparent;
+  z-index: 9000;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.nav__logo {
+  color: var(--color-white);
+  font-size: 4rem;
+  text-transform: capitalize;
+  margin-right: auto;
+  letter-spacing: 0.8px;
+}
+.nav__navigation {
+  transition: all 0.6s ease-in-out;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+.nav__list > *:not(:last-child) {
+  margin-right: 3.5rem;
+}
+.nav__item--link,
+.nav__item--link:visited {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: var(--color-white);
+}
+
+.hamburger {
+  display: none;
+}
+.hamb {
+  width: 30px;
+  height: 3px;
+  background-color: var(--color-white);
+}
+.hamb:not(:last-of-type) {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 650px) {
+  .hamburger {
+    display: block;
+  }
+  .nav__navigation {
+    position: absolute;
+    top: 10rem;
+    right: 0;
+  }
+  .nav__list {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    padding: 2rem;
+  }
+  .nav__list > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .nav__flipper {
+    position: absolute;
+    right: -20rem;
+  }
+}
+/* end of navigation */
+
+/* hero section of the webpage */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-position: center;
+  background-size: cover; 
+}
+.hero__title {
+  font-size: 5rem;
+  color: var(--color-white);
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  line-height: 1.2;
+  width: clamp(80%, 80%, 80%);
+}
+
+.hero__subtitle {
+  font-size: 2rem;
+  color: var(--color-white);
+  text-align: center;
+  margin-top: 2rem;
 }

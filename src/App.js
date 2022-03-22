@@ -1,9 +1,13 @@
-import './App.css';
+import "./App.css";
+
+import Hero from "./components/Hero/Hero";
+import Navigation from "./components/Navigation/Navigation";
 
 function App() {
   return (
     <div className="App">
-      <h1>clima web app</h1>
+      <Navigation />
+      <Hero />
     </div>
   );
 }
