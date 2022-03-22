@@ -1,17 +1,18 @@
 import Title from "../Typography/Title";
 import Goal from "./Goal";
 import React, { useRef } from "react";
+import avartarImg from './../../assets/images/industrial.jpg';
 
 const RecommendationsAndGoals = () => {
   const formRef = useRef(null);
   const popTheFormUp = () => {
     formRef.current.classList.add("u-show-form");
   };
-//   const hideTheForm = (e) => {
-//     if (formRef.current.classList.contains("u-show-form")) {
-//       formRef.current.classList.remove("u-show-form");
-//     }
-//   };
+  const hideTheForm = (e) => {
+    if (formRef.current.classList.contains("u-show-form")) {
+      formRef.current.classList.remove("u-show-form");
+    }
+  };
   const goals = [
     {
       goal: "feed arid areas",
@@ -40,7 +41,44 @@ const RecommendationsAndGoals = () => {
       <Title mainTitle="Recommendations" subTitle="What you should use" />
 
       <form action="#" className="recommendation__form" ref={formRef}>
-        <input type="text" placeholder="so what crop do you grow" />
+        <div className="close-btn" onClick={hideTheForm}>
+            <div className="close-btn__icon"></div>
+        </div>
+        <div className="recommendation__form--controlls">
+            <img src={avartarImg} alt="some avartar" className="form__avartar" />
+            <div className="form__group" style={{marginTop: "4rem"}}>
+                <label htmlFor="name" className="form__group--label">Name</label>
+                <input type="text" className="form__group--text-input" placeholder="your full name" id="name" />
+            </div>
+
+            <div className="form__flex">
+                <div className="form__group">
+                    <label htmlFor="crop-name" className="form__group--label">crop</label>
+                    <input type="text" className="form__group--text-input" placeholder="name of your crop" id="crop-name" />
+                </div>
+                <div className="form__group">
+                    <label htmlFor="crop-age" className="form__group--label">crop age</label>
+                    <input type="text" className="form__group--text-input" placeholder="value in moths" id="crop-age" />
+                </div>
+            </div>
+            <div className="form__flex">
+                <div className="form__group">
+                    <label htmlFor="last-pesticide" className="form__group--label">last pesticide</label>
+                    <input type="text" className="form__group--text-input" placeholder="last pesticide" id="last-pesticide" />
+                </div>
+                <div className="form__group">
+                    <label htmlFor="application-date" className="form__group--label">Application date</label>
+                    <input type="text" className="form__group--text-input" placeholder="value in moths" id="application-date" />
+                </div>
+            </div>
+
+            <div className="form__group">
+                <label htmlFor="disease-seen" className="form__group--label">Pest/Disease seen</label>
+                <input type="text" className="form__group--text-input" placeholder="name of pest/disease seen" id="disease-seen" />
+            </div>
+        </div>
+
+        <div className="recommendation__form--image"></div>
       </form>
 
       <div className="recom-goals__wrapper">
