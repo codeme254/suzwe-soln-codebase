@@ -76,6 +76,16 @@ const RecommendationsAndGoals = () => {
                 <label htmlFor="disease-seen" className="form__group--label">Pest/Disease seen</label>
                 <input type="text" className="form__group--text-input" placeholder="name of pest/disease seen" id="disease-seen" />
             </div>
+            <div className="form__group">
+                <label htmlFor="email" className="form__group--label">email address</label>
+                <input type="email" className="form__group--text-input" placeholder="your email address" id="email" />
+            </div>
+            <div className="form__group">
+                <label htmlFor="phone" className="form__group--label">your mobile number</label>
+                <input type="tel" className="form__group--text-input" placeholder="Your mobile number" id="disease-seen" />
+            </div>
+
+            <button className="form__submit--button" type="submit" title="submit your response">Submit</button>
         </div>
 
         <div className="recommendation__form--image"></div>
