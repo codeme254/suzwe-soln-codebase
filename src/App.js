@@ -6,6 +6,7 @@ import RecommendationsAndGoals from "./components/Recom-Goals/Main";
 import Educative from "./components/Educative/Educative";
 import Initiatives from "./components/Initiative/Initiatives";
 import NextSteps from "./components/NextSteps/NextSteps";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Educative />
       <Initiatives />
       <NextSteps />
+      <Footer />
     </div>
   );
 }

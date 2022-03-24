@@ -47,6 +47,19 @@ html {
   font-weight: 600;
   letter-spacing: 1.2px;
 }
+
+body{
+  padding-top: .8rem;
+}
+
+@media screen and (min-width: 1800px) {
+  #root{
+    max-width: 80vw;
+    min-width: 80vw;
+    margin:1rem auto;
+  }
+  
+}
 /* end of typography and common styles */
 
 /* the navigation section */
@@ -131,7 +144,7 @@ html {
 /* hero section of the webpage */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -193,14 +206,14 @@ html {
   overflow-x: hidden;
 }
 
-.recommendation__form--controlls::-webkit-scrollbar{
+.recommendation__form--controlls::-webkit-scrollbar {
   width: 6px;
 }
-.recommendation__form--controlls::-webkit-scrollbar-track{
+.recommendation__form--controlls::-webkit-scrollbar-track {
   background-color: var(--color-white);
   border-radius: 10rem;
 }
-.recommendation__form--controlls::-webkit-scrollbar-thumb{
+.recommendation__form--controlls::-webkit-scrollbar-thumb {
   background-color: var(--color-recom-green);
   border-radius: 10rem;
 }
@@ -320,7 +333,7 @@ html {
   color: var(--color-white);
 }
 
-.form__submit--button{
+.form__submit--button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -332,11 +345,11 @@ html {
   cursor: pointer;
   border-radius: 6px;
   color: var(--color-recom-green);
-  letter-spacing: .8px;
-  transition: all .5s;
+  letter-spacing: 0.8px;
+  transition: all 0.5s;
 }
 
-.form__submit--button:hover{
+.form__submit--button:hover {
   background-color: var(--color-recom-green);
   color: var(--color-white);
 }
@@ -406,8 +419,8 @@ html {
         rgba(255, 255, 255, 0.6)
       ),
       url(./assets/images/industrial.jpg);
-      display: flex;
-      flex-direction: column;
+    display: flex;
+    flex-direction: column;
   }
 
   .recommendation__form--image {
@@ -417,39 +430,39 @@ html {
 /* end of the recommendations and goals section */
 
 /* educative section */
-.educative-section{
+.educative-section {
   padding: 3rem;
   margin-block-start: 3rem;
   background-color: #c4c4c4;
 }
-.educative-parent{
+.educative-parent {
   width: 35rem;
   perspective: 100rem;
 }
 
-.educative{
+.educative {
   width: 100%;
   border-radius: 15px;
   overflow: hidden;
   transform: rotateY(-20deg);
   box-shadow: 5px 5px 3px var(--color-primary-light);
-  transition: all .3s ease;
+  transition: all 0.3s ease;
   margin-bottom: 4rem;
 }
 
-.educative__image{
+.educative__image {
   width: 100%;
   height: 22rem;
 }
 
-.educative__image--img{
+.educative__image--img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.educatives__container{
+.educatives__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -458,7 +471,7 @@ html {
   margin: 4rem 0;
 }
 
-.educative__body{
+.educative__body {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -467,23 +480,24 @@ html {
   background-color: var(--color-primary-jungle-green);
 }
 
-.educative__body>*:not(:last-child){
+.educative__body > *:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.educative__body--title{
+.educative__body--title {
   font-size: 2.8rem;
   text-transform: capitalize;
   color: var(--color-recom-green);
 }
 
-.educative__body--pretext{
+.educative__body--pretext {
   font-size: 1.7rem;
   color: var(--color-white);
   text-align: center;
 }
 
-.educative__button, .educative__button:visited{
+.educative__button,
+.educative__button:visited {
   padding: 1rem 2rem;
   color: var(--color-recom-green);
   border: 1px solid var(--color-recom-green);
@@ -496,11 +510,11 @@ html {
 /* end of educative section */
 
 /* initiatives section */
-.initiatives{
+.initiatives {
   padding: 3rem;
 }
 
-.all-initiatives-container{
+.all-initiatives-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -508,7 +522,7 @@ html {
   margin: 3rem 0;
 }
 
-.initiative{
+.initiative {
   width: 40rem;
   margin-bottom: 3rem;
   border-radius: 20px;
@@ -516,7 +530,7 @@ html {
   overflow: hidden;
 }
 
-.initiative__image{
+.initiative__image {
   width: 100%;
   height: 20rem;
   border-radius: 8px;
@@ -525,25 +539,26 @@ html {
   overflow: hidden;
 }
 
-.initiative__image--img{
+.initiative__image--img {
   width: 100%;
   height: 100%;
   display: block;
   object-fit: cover;
 }
 
-.initiative__body{
+.initiative__body {
   padding: 2rem;
   position: relative;
 }
 
-.initiative__body--description{
+.initiative__body--description {
   font-size: 1.8rem;
   text-align: justify;
   line-height: 1.6;
 }
 
-.initiative__button, .initiative__button:visited{
+.initiative__button,
+.initiative__button:visited {
   position: relative;
   margin-right: 0;
   font-size: 2.5rem;
@@ -555,21 +570,21 @@ html {
   margin-top: 1.5rem;
   padding: 1rem 1.5rem;
   border-radius: 8px;
-  letter-spacing: .8px;
+  letter-spacing: 0.8px;
   color: var(--color-recom-green);
   cursor: pointer;
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.initiative__button:hover{
+.initiative__button:hover {
   background-color: var(--color-recom-green);
   color: var(--color-white);
 }
-.initiative__button:hover svg{
+.initiative__button:hover svg {
   fill: var(--color-white);
 }
 
-.initiative__button svg{
+.initiative__button svg {
   --size: 3rem;
   width: var(--size);
   height: var(--size);
@@ -578,26 +593,25 @@ html {
 }
 /* end of initiatives section */
 
-
 /* next steps */
-.nextsteps{
+.nextsteps {
   padding: 3rem;
 }
 
-.nextsteps__container{
+.nextsteps__container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
   margin-top: 2rem;
 }
 
-@media screen and (max-width:900px){
-  .nextsteps__container{
+@media screen and (max-width: 900px) {
+  .nextsteps__container {
     display: flex;
     flex-direction: column;
   }
 }
 
-.nextsteps__textual{
+.nextsteps__textual {
   padding-right: 6rem;
   padding-block: 3rem;
   padding-top: 3rem;
@@ -608,29 +622,30 @@ html {
   align-items: flex-start;
 }
 
-.nextsteps__textual--text{
+.nextsteps__textual--text {
   font-size: 2rem;
   margin-bottom: 4rem;
   line-height: 1.5;
   text-align: justify;
 }
 
-.nextsteps__textual--button, .nextsteps__textual--button:visited{
+.nextsteps__textual--button,
+.nextsteps__textual--button:visited {
   font-size: 2rem;
   padding: 1rem 2rem;
   border: 1px solid var(--color-recom-green);
   color: var(--color-recom-green);
   font-weight: 700;
   border-radius: 2px;
-  transition: color .2s ease;
+  transition: color 0.2s ease;
 }
 
-.nextsteps__textual--button:hover{
+.nextsteps__textual--button:hover {
   background-color: var(--color-recom-green);
   color: var(--color-white);
 }
 
-.form{
+.form {
   padding: 3rem;
   padding-left: 6rem;
   background-color: var(--color-primary-jungle-green);
@@ -638,7 +653,7 @@ html {
   border-bottom-left-radius: 60px;
 }
 
-.form__title{
+.form__title {
   font-size: 3rem;
   text-transform: capitalize;
   font-weight: 300;
@@ -647,19 +662,19 @@ html {
   margin-bottom: 3rem;
 }
 
-.form__group{
+.form__group {
   margin-bottom: 3rem;
   width: 80%;
 }
 
-.form__group--label{
+.form__group--label {
   font-size: 1.8rem;
   color: var(--color-white);
   text-transform: capitalize;
   margin-bottom: 2rem;
 }
 
-.form__group--text-input-feedback{
+.form__group--text-input-feedback {
   background-color: transparent;
   border: none;
   outline: none;
@@ -668,7 +683,7 @@ html {
   padding: 1rem 0;
 }
 
-.form__group--textarea{
+.form__group--textarea {
   color: var(--color-white-light);
   background-color: transparent;
   border: none;
@@ -677,7 +692,7 @@ html {
   resize: vertical;
 }
 
-.form__button{
+.form__button {
   border: none;
   outline: none;
   background-color: transparent;
@@ -690,3 +705,21 @@ html {
   border-radius: 4px;
 }
 /* end of next steps */
+
+/* footer */
+.footer {
+  margin: 3rem 0;
+  background-color: var(--color-black-light);
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.footer__text {
+  color: var(--color-white-light);
+  text-align: center;
+  padding-top: 2rem;
+  border-top: 2px solid var(--color-white);
+  width: 80%;
+}
+/* end of footer */
