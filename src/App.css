@@ -420,6 +420,7 @@ html {
 .educative-section{
   padding: 3rem;
   margin-block-start: 3rem;
+  background-color: #c4c4c4;
 }
 .educative-parent{
   width: 35rem;
