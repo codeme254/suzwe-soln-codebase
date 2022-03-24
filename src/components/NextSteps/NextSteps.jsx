@@ -14,7 +14,23 @@ const NextSteps = () => {
           <a href="/" className="nextsteps__textual--button">Get in touch with us</a>
         </div>
         <div className="nextsteps__form">
-          <h1>form goes here</h1>
+          <form action="#" className="form">
+            <h3 className="form__title">Feedback form</h3>
+            <div className="form__group">
+              <label htmlFor="email" className="form__group--label">Email address</label>
+              <input type="email" id="email" className="form__group--text-input-feedback" required placeholder="example@gmail.com" />
+            </div>
+            <div className="form__group">
+              <label htmlFor="subject" className="form__group--label">Subject</label>
+              <input type="text" id="subject" className="form__group--text-input-feedback" required placeholder="john doe" />
+            </div>
+            <div className="form__group">
+              <label htmlFor="message" className="form__group--label">message</label>
+              <textarea id="message" className="form__group--textarea" required placeholder="keep up the effort suzwe, thanks"></textarea>
+            </div>
+
+            <button className="form__button" type="submit">Submit</button>
+          </form>
         </div>
       </div>
     </section>

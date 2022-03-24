@@ -590,6 +590,13 @@ html {
   margin-top: 2rem;
 }
 
+@media screen and (max-width:900px){
+  .nextsteps__container{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .nextsteps__textual{
   padding-right: 6rem;
   padding-block: 3rem;
@@ -621,5 +628,65 @@ html {
 .nextsteps__textual--button:hover{
   background-color: var(--color-recom-green);
   color: var(--color-white);
+}
+
+.form{
+  padding: 3rem;
+  padding-left: 6rem;
+  background-color: var(--color-primary-jungle-green);
+  border-top-left-radius: 60px;
+  border-bottom-left-radius: 60px;
+}
+
+.form__title{
+  font-size: 3rem;
+  text-transform: capitalize;
+  font-weight: 300;
+  color: var(--color-white);
+  letter-spacing: 1.2px;
+  margin-bottom: 3rem;
+}
+
+.form__group{
+  margin-bottom: 3rem;
+  width: 80%;
+}
+
+.form__group--label{
+  font-size: 1.8rem;
+  color: var(--color-white);
+  text-transform: capitalize;
+  margin-bottom: 2rem;
+}
+
+.form__group--text-input-feedback{
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid var(--color-recom-green);
+  color: var(--color-white-light);
+  padding: 1rem 0;
+}
+
+.form__group--textarea{
+  color: var(--color-white-light);
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid var(--color-recom-green);
+  outline: none;
+  resize: vertical;
+}
+
+.form__button{
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--color-recom-green);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  letter-spacing: 1.2px;
+  border: 2px solid var(--color-recom-green);
+  cursor: pointer;
+  border-radius: 4px;
 }
 /* end of next steps */
