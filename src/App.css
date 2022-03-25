@@ -48,17 +48,16 @@ html {
   letter-spacing: 1.2px;
 }
 
-body{
-  padding-top: .8rem;
+body {
+  padding-top: 0.8rem;
 }
 
 @media screen and (min-width: 1800px) {
-  #root{
+  #root {
     max-width: 80vw;
     min-width: 80vw;
-    margin:1rem auto;
+    margin: 1rem auto;
   }
-  
 }
 /* end of typography and common styles */
 
@@ -667,7 +666,7 @@ body{
   width: 80%;
 }
 
-.form__group--label {
+.form__group--label--nex-steps {
   font-size: 1.8rem;
   color: var(--color-white);
   text-transform: capitalize;
