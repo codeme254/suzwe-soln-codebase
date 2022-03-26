@@ -436,7 +436,7 @@ body {
 }
 .educative-parent {
   width: 35rem;
-  perspective: 100rem;
+  /* perspective: 100rem; */
 }
 
 .educative {
