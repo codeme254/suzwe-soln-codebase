@@ -48,6 +48,13 @@ html {
   letter-spacing: 1.2px;
 }
 
+@media screen and (max-width: 900px) {
+  .title{
+    text-align: center;
+    margin: auto;
+  }
+}
+
 body {
   padding-top: 0.8rem;
 }
@@ -794,4 +801,67 @@ body {
     margin: 2rem auto;
     font-size: 4rem;
   }
+}
+
+/* about initiative */
+.about-initiative{
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.about-initiative__container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  margin-top: 3rem;
+}
+
+.about-initative__heading{
+  min-width: 45vw;
+  margin-right: 5vw;
+}
+
+.about-initative__heading--heading-text{
+  font-size: 4rem;
+  color: #000;
+  text-align: justify;
+}
+
+.about-initiative__description{
+  min-width: 45rem;
+}
+
+.about-initiative__description--text{
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+@media screen and (max-width: 900px) {
+  .about-initiative__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-initative__heading, .about-initiative__description{
+    width: 80vw;
+    margin: 2rem auto;
+  }
+}
+
+/* inititative goals part */
+.initiative-goals{
+  padding: 2rem;
+  margin: 2rem;
+  margin-top: 3rem;
+}
+
+.goals-container{
+  margin-top: 6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(40rem, 1fr));
+  gap: 5rem;
 }
