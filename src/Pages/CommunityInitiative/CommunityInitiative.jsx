@@ -4,6 +4,10 @@ import CommunityInitiativeHero from "./CommunityInitiativeHero";
 import drySweetImage from "./../../assets/images/landscape.jpg";
 import AboutInitiative from "./AboutInitiative";
 import InitiativeGoals from "./InitiativeGoals";
+import InitiativeCTA from "./InitiativeCTA";
+import OtherInitiatives from "./OtherInitiatives";
+
+import communityImg from './../../assets/images/community.jpg'
 
 const CommunityInitiativePage = () => {
     const goalsArray = [
@@ -32,6 +36,24 @@ const CommunityInitiativePage = () => {
             description: "we really want to achieve this goal and we mean it, we really really want to meet it"
         },
     ]
+
+    const otherInitiatives = [
+        {
+            image: communityImg,
+            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
+            linkToPage: '/mandera-irrigation-project'
+        },
+        {
+            image: communityImg,
+            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
+            linkToPage: '/mandera-irrigation-project'
+        },
+        {
+            image: communityImg,
+            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
+            linkToPage: '/mandera-irrigation-project'
+        },
+    ]
   return (
     <div className="page-root page-root-fix-header">
       <Navigation />
@@ -46,6 +68,8 @@ const CommunityInitiativePage = () => {
 
       {/* for initiative goals, just pass in the array of all items you want rendered, make sure the array is an array of object with keys title and description only spelled the exact same way */}
       <InitiativeGoals goalsArray={goalsArray} />
+      <InitiativeCTA />
+      <OtherInitiatives arrayOfOtherInitiatives={otherInitiatives} />
     </div>
   );
 };
