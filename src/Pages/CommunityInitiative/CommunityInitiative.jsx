@@ -6,6 +6,7 @@ import AboutInitiative from "./AboutInitiative";
 import InitiativeGoals from "./InitiativeGoals";
 import InitiativeCTA from "./InitiativeCTA";
 import OtherInitiatives from "./OtherInitiatives";
+import CommunityInitiativeFooter from "./CommunityInitiativeFooter";
 
 import communityImg from './../../assets/images/community.jpg'
 
@@ -70,6 +71,7 @@ const CommunityInitiativePage = () => {
       <InitiativeGoals goalsArray={goalsArray} />
       <InitiativeCTA />
       <OtherInitiatives arrayOfOtherInitiatives={otherInitiatives} />
+      <CommunityInitiativeFooter />
     </div>
   );
 };
