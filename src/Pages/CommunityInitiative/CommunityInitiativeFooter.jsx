@@ -6,16 +6,16 @@ const CommunityInitiativeFooter = () => {
         <footer className="community-initiative-footer">
             <h2 className="community-initiative-footer__logo">Clima</h2>
             <div className="c-i-footer__social">
-                <a href="" className="c-i-footer__social--link">
+                <a href="https://google.com" className="c-i-footer__social--link">
                     <FacebookIcon />
                 </a>
-                <a href="" className="c-i-footer__social--link">
+                <a href="https://google.com" className="c-i-footer__social--link">
                     <LinkedInIcon />
                 </a>
-                <a href="" className="c-i-footer__social--link">
+                <a href="https://google.com" className="c-i-footer__social--link">
                     <TwitterIcon />
                 </a>
-                <a href="" className="c-i-footer__social--link">
+                <a href="https://google.com" className="c-i-footer__social--link">
                     <PhoneCallIcon />
                 </a>
             </div>
