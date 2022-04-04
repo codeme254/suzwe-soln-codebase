@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import ArrowRight from "./Icons";
 
-const InitiativeCard = ({ image, description, linkToJoinForm }) => {
+const InitiativeCard = ({ image, description, linkToPage }) => {
   return (
     <div className="initiative">
       <div className="initiative__image">
@@ -13,9 +14,11 @@ const InitiativeCard = ({ image, description, linkToJoinForm }) => {
       </div>
       <div className="initiative__body">
         <p className="initiative__body--description">{description}</p>
-        <a href={linkToJoinForm} className="initiative__button">
+        {/* <a href={linkToJoinForm} className="initiative__button">
           Join <ArrowRight />
-        </a>
+        </a> */}
+        {/* <Link to={linkToPage}><span className="initiative__button">Join</span> <ArrowRight /></Link> */}
+        <Link to={linkToPage} className="initiative__button">Join <ArrowRight /></Link>
       </div>
     </div>
   );
