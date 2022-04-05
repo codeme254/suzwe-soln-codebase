@@ -59,12 +59,24 @@ body {
   padding-top: 0.8rem;
 }
 
-@media screen and (min-width: 1800px) {
-  #root {
-    max-width: 80vw;
-    min-width: 80vw;
-    margin: 1rem auto;
+@media screen and (min-width: 1500px) {
+  /* #root {
+    width: 80vw;
+    margin:0 auto;
+  } */
+
+  body{
+    width: 80vw;
+    margin: 0 auto;
   }
+  
+  .nav {
+    width: 80vw!important;
+    position: absolute;
+    left: -50%;
+    transform: translateX(12.5%);
+  }
+  
 }
 
 .width-fix{

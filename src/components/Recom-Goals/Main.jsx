@@ -178,14 +178,7 @@ const RecommendationsAndGoals = () => {
             excepturi facere itaque quas. Ratione rem assumenda consequatur eos.
             Similique modi optio vitae natus ut suscipit cumque harum blanditiis
             veritatis molestiae nihil impedit, quia, facere eos perspiciatis
-            doloremque voluptatum deleniti iste atque incidunt voluptate. Atque
-            quae iusto, molestias eum eaque officia autem earum, dolorem alias
-            consequatur molestiae deserunt repellat perferendis aperiam ut
-            inventore eius mollitia quaerat quasi? Nulla assumenda obcaecati
-            laboriosam aperiam, consequatur suscipit ea? Quasi nam maiores quo
-            ad exercitationem modi saepe deleniti explicabo, eum sequi ea
-            tempore! Unde velit laborum ad illo adipisci voluptates ratione odio
-            animi in!
+            doloremque voluptatum deleniti iste atque.
           </p>
           <button className="recommendations__button" onClick={popTheFormUp}>
             Get Recommendations
