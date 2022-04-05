@@ -65,21 +65,20 @@ body {
     margin:0 auto;
   } */
 
-  body{
+  body {
     width: 80vw;
     margin: 0 auto;
   }
-  
+
   .nav {
-    width: 80vw!important;
+    width: 80vw !important;
     position: absolute;
     left: -50%;
     transform: translateX(12.5%);
   }
-  
 }
 
-.width-fix{
+.width-fix {
   width: 98vw;
   margin: 0 auto;
   margin-top: 0;
@@ -130,11 +129,11 @@ body {
   margin-right: 3.5rem;
 }
 
-.nav__item{
+.nav__item {
   position: relative;
 }
 
-.nav__popover{
+.nav__popover {
   z-index: 50;
   width: max-content;
   display: flex;
@@ -148,11 +147,11 @@ body {
   left: 50%;
   transform: translateX(-50%) translateY(15px) scale(0);
   /* transform-origin: top; */
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   display: none;
 }
 
-.nav__popover::after{
+.nav__popover::after {
   content: "";
   width: 4rem;
   height: 4rem;
@@ -164,24 +163,25 @@ body {
   transform: translateX(-50%);
 }
 
-.nav__item:hover .nav__popover{
-  display: flex!important;
+.nav__item:hover .nav__popover {
+  display: flex !important;
   transform: translateX(-50%) translateY(10px) scale(1);
 }
 
-.nav__popover>*:not(:last-child){
-  margin-bottom: .5rem;
+.nav__popover > *:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
-.nav__popover--link, .nav__popover--link:visited{
+.nav__popover--link,
+.nav__popover--link:visited {
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem 1.5rem;
   border-bottom: 1px solid var(--color-black-light);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
-.nav__popover--link:hover{
+.nav__popover--link:hover {
   background-color: var(--color-primary-jungle-green);
   color: var(--color-white);
 }
@@ -195,7 +195,7 @@ body {
   font-size: 1.8rem;
   text-transform: capitalize;
   color: var(--color-white);
-  transition: all .5s ease;
+  transition: all 0.5s ease;
 }
 
 .hamburger {
@@ -529,7 +529,10 @@ body {
 .educative-section {
   padding: 3rem;
   margin-block-start: 3rem;
-  background-color: #c4c4c4;
+  /* background-color: #c4c4c4; */
+  background: linear-gradient(rgba(3, 3, 3, 0.8), rgb(192, 72, 72, 0.8)),
+    url("/styling/farming.jpg");
+  backdrop-filter: blur(50px);
 }
 .educative-parent {
   width: 35rem;
@@ -541,7 +544,7 @@ body {
   border-radius: 15px;
   overflow: hidden;
   transform: rotateY(-20deg);
-  box-shadow: 5px 5px 3px var(--color-primary-light);
+  /* box-shadow: 5px 5px 3px var(--color-primary-light); */
   transition: all 0.3s ease;
   margin-bottom: 4rem;
 }
@@ -1006,7 +1009,7 @@ body {
   margin-bottom: 2rem;
 }
 
-.community-initiative-footer >*{
+.community-initiative-footer > * {
   margin-bottom: 2rem;
 }
 
@@ -1017,20 +1020,21 @@ body {
   fill: var(--color-recom-green);
 }
 
-.community-initiative-footer__logo{
+.community-initiative-footer__logo {
   font-size: 5rem;
   color: var(--color-white);
 }
 
-.c-i-footer__social >*:not(:last-child){
+.c-i-footer__social > *:not(:last-child) {
   margin-right: 3rem;
 }
 
-.c-i-footer__thankyou{
+.c-i-footer__thankyou {
   line-height: 1.5;
 }
 
-.c-i-footer__thankyou--main, .c-i-footer__thankyou--copyright{
+.c-i-footer__thankyou--main,
+.c-i-footer__thankyou--copyright {
   color: var(--color-white);
   font-size: 2rem;
   letter-spacing: 1.5px;

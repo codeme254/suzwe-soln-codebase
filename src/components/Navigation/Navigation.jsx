@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 
 const Navigation = () => {
   const navRef = useRef(null);
-  const popUpRef = useRef(null)
+  const popUpRef = useRef(null);
   const handleNav = () => {
     console.log("handling the navigation");
     navRef.current.classList.toggle("nav__flipper");
@@ -10,12 +10,19 @@ const Navigation = () => {
 
   const handleHoverOut = () => {
     setTimeout(() => {
-      document.write("what then")
-    }, 1000)
-  }
+      document.write("what then");
+    }, 1000);
+  };
   return (
     <div className="nav">
-      <h1 className="nav__logo">clima</h1>
+      <div className="nav_brand">
+        <img
+          width="100"
+          src={process.env.PUBLIC_URL + "/logo/Clima.svg"}
+          alt="Clima "
+        />
+      </div>
+
       <nav className="nav__navigation nav__flipper" ref={navRef}>
         <ol className="nav__list">
           <li className="nav__item" onmouseout={handleHoverOut}>
@@ -23,10 +30,18 @@ const Navigation = () => {
               fertilizers
             </a>
             <div className="nav__popover">
-              <a href="/" className="nav__popover--link">Fertilizer 1</a>
-              <a href="/" className="nav__popover--link">Fertilizer 2</a>
-              <a href="/" className="nav__popover--link">Fertilizer 3</a>
-              <a href="/" className="nav__popover--link">Fertilizer 4</a>
+              <a href="/" className="nav__popover--link">
+                Fertilizer 1
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fertilizer 2
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fertilizer 3
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fertilizer 4
+              </a>
             </div>
           </li>
           <li className="nav__item" onmouseout={handleHoverOut}>
@@ -34,10 +49,18 @@ const Navigation = () => {
               pesticides
             </a>
             <div className="nav__popover">
-              <a href="/" className="nav__popover--link">Pesticide 1</a>
-              <a href="/" className="nav__popover--link">Pesticide 2</a>
-              <a href="/" className="nav__popover--link">Pesticide 3</a>
-              <a href="/" className="nav__popover--link">Pesticide 4</a>
+              <a href="/" className="nav__popover--link">
+                Pesticide 1
+              </a>
+              <a href="/" className="nav__popover--link">
+                Pesticide 2
+              </a>
+              <a href="/" className="nav__popover--link">
+                Pesticide 3
+              </a>
+              <a href="/" className="nav__popover--link">
+                Pesticide 4
+              </a>
             </div>
           </li>
           <li className="nav__item" onmouseout={handleHoverOut}>
@@ -45,10 +68,18 @@ const Navigation = () => {
               fungicides
             </a>
             <div className="nav__popover">
-              <a href="/" className="nav__popover--link">Fungicide 1</a>
-              <a href="/" className="nav__popover--link">Fungicide 2</a>
-              <a href="/" className="nav__popover--link">Fungicide 3</a>
-              <a href="/" className="nav__popover--link">Fungicide 4</a>
+              <a href="/" className="nav__popover--link">
+                Fungicide 1
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fungicide 2
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fungicide 3
+              </a>
+              <a href="/" className="nav__popover--link">
+                Fungicide 4
+              </a>
             </div>
           </li>
           <li className="nav__item" onmouseout={handleHoverOut}>
@@ -56,10 +87,18 @@ const Navigation = () => {
               initiative
             </a>
             <div className="nav__popover">
-              <a href="/" className="nav__popover--link">Initiative 1</a>
-              <a href="/" className="nav__popover--link">Initiative 2</a>
-              <a href="/" className="nav__popover--link">Initiative 3</a>
-              <a href="/" className="nav__popover--link">Initiative 4</a>
+              <a href="/" className="nav__popover--link">
+                Initiative 1
+              </a>
+              <a href="/" className="nav__popover--link">
+                Initiative 2
+              </a>
+              <a href="/" className="nav__popover--link">
+                Initiative 3
+              </a>
+              <a href="/" className="nav__popover--link">
+                Initiative 4
+              </a>
             </div>
           </li>
         </ol>
