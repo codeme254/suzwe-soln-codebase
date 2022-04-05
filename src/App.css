@@ -147,7 +147,7 @@ body {
 
 .nav__item:hover .nav__popover{
   display: flex!important;
-  transform: translateX(-50%) translateY(15px) scale(1);
+  transform: translateX(-50%) translateY(1px) scale(1);
 }
 
 .nav__popover>*:not(:last-child){
