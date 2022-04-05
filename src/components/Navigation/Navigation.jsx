@@ -2,16 +2,23 @@ import React, { useRef } from "react";
 
 const Navigation = () => {
   const navRef = useRef(null);
+  const popUpRef = useRef(null)
   const handleNav = () => {
     console.log("handling the navigation");
     navRef.current.classList.toggle("nav__flipper");
   };
+
+  const handleHoverOut = () => {
+    setTimeout(() => {
+      document.write("what then")
+    }, 1000)
+  }
   return (
     <div className="nav">
       <h1 className="nav__logo">clima</h1>
       <nav className="nav__navigation nav__flipper" ref={navRef}>
         <ol className="nav__list">
-          <li className="nav__item">
+          <li className="nav__item" onmouseout={handleHoverOut}>
             <a href="/" className="nav__item--link">
               fertilizers
             </a>
@@ -22,7 +29,7 @@ const Navigation = () => {
               <a href="/" className="nav__popover--link">Fertilizer 4</a>
             </div>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onmouseout={handleHoverOut}>
             <a href="/" className="nav__item--link">
               pesticides
             </a>
@@ -33,7 +40,7 @@ const Navigation = () => {
               <a href="/" className="nav__popover--link">Pesticide 4</a>
             </div>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onmouseout={handleHoverOut}>
             <a href="/" className="nav__item--link">
               fungicides
             </a>
@@ -44,7 +51,7 @@ const Navigation = () => {
               <a href="/" className="nav__popover--link">Fungicide 4</a>
             </div>
           </li>
-          <li className="nav__item">
+          <li className="nav__item" onmouseout={handleHoverOut}>
             <a href="/" className="nav__item--link">
               initiative
             </a>
