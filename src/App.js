@@ -1,5 +1,5 @@
-// import "./App.css";
-import "./style.css"
+import "./App.css";
+// import "./style.css"
 import React from 'react';
 import Hero from "./components/Hero/Hero";
 import Navigation from "./components/Navigation/Navigation";
