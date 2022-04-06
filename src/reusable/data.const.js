@@ -9,7 +9,7 @@ export const PestsData = [
     preHarvestInterval: 0,
     rate: "8-20 ml /ha",
     modeOfAction: "Contact",
-  },
+  }, 
   {
     pest: "Cut Worms",
     plant: ["Tomatoes", "Potatoes", "Maize"],
