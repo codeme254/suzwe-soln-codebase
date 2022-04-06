@@ -16,21 +16,21 @@ const Educative = () => {
       title: "pesticides",
       preText:
         "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+      learnPageLink: "/pesticides",
     },
     {
       image: fertImg,
       title: "fertilizers",
       preText:
         "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+      learnPageLink: "/fertilizers",
     },
     {
       image: fungiImg,
       title: "fungicides",
       preText:
         "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+      learnPageLink: "/fungicides",
     },
   ];
 

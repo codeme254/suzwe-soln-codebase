@@ -10,7 +10,7 @@ const Navigation = () => {
 
   const handleHoverOut = () => {
     setTimeout(() => {
-      document.write("what then");
+      console.log("handled hover out")
     }, 1000);
   };
   return (
@@ -20,6 +20,7 @@ const Navigation = () => {
           width="100"
           src={process.env.PUBLIC_URL + "/logo/Clima.svg"}
           alt="Clima "
+          className="nav__image"
         />
       </div>
 
