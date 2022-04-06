@@ -545,7 +545,7 @@ body {
   padding: 3rem;
   margin-block-start: 3rem;
   /* background-color: #c4c4c4; */
-  background: linear-gradient(rgba(3, 3, 3, 0.8), rgb(192, 72, 72, 0.8)),
+  background: linear-gradient(rgba(3, 3, 3, 0.8), rgba(192, 72, 72, 0.8)),
     url("/styling/farming.jpg");
   backdrop-filter: blur(50px);
 }
