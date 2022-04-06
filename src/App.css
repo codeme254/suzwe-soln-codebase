@@ -109,7 +109,7 @@ body {
   z-index: 100;
 }
 
-.page-root-fix-header-2 .nav{
+.page-root-fix-header-2 .nav {
   margin-bottom: 8rem;
 }
 
@@ -121,12 +121,12 @@ body {
   letter-spacing: 0.8px;
 }
 
-.nav_brand{
+.nav_brand {
   margin-right: auto;
 }
 
-.nav__image{
-  --size:3.5rem;
+.nav__image {
+  --size: 3.5rem;
   width: var(--size);
   height: var(--size);
 }
@@ -545,7 +545,7 @@ body {
   padding: 3rem;
   margin-block-start: 3rem;
   /* background-color: #c4c4c4; */
-  background: linear-gradient(rgba(3, 3, 3, 0.8), rgba(192, 72, 72, 0.8)),
+  background: linear-gradient(rgba(15, 15, 15, 0.8), rgba(0, 0, 0, 0.719)),
     url("/styling/farming.jpg");
   backdrop-filter: blur(50px);
 }
@@ -1056,7 +1056,7 @@ body {
 }
 
 /* The educative section */
-.educative-hero{
+.educative-hero {
   width: 90vw;
   margin: 4rem auto;
   padding: 2rem 0;
@@ -1067,20 +1067,20 @@ body {
   align-items: center;
 }
 
-.educative-hero__title{
+.educative-hero__title {
   font-size: 5rem;
   color: #000;
   margin-bottom: 2rem;
   text-transform: capitalize;
 }
 
-.educative-hero__text{
+.educative-hero__text {
   font-size: 1.7rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.educative-hero__button{
+.educative-hero__button {
   font-size: 1.8rem;
   padding: 1rem 1.5rem;
   border: none;
@@ -1093,13 +1093,13 @@ body {
   cursor: pointer;
 }
 
-.educative-section__tips{
+.educative-section__tips {
   width: 85vw;
   margin: 1rem auto;
   margin-bottom: 3rem;
 }
 
-.educative-section__tips-container{
+.educative-section__tips-container {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));

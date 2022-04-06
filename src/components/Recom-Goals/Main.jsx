@@ -38,7 +38,10 @@ const RecommendationsAndGoals = () => {
   return (
     // when a radom place outside the formis clicked, the form is supposed to hide and that is why am attaching the function for hiding the form on the body holding the form
     <section className="recom-goals">
-      <Title mainTitle="Recommendations" subTitle="What you should use" />
+      <Title
+        mainTitle="Get Farming Tips"
+        subTitle="Upgrade   your farming techniques"
+      />
 
       <form action="#" className="recommendation__form" ref={formRef}>
         <div className="close-btn" onClick={hideTheForm}>
