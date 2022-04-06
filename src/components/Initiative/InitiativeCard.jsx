@@ -14,11 +14,11 @@ const InitiativeCard = ({ image, description, linkToPage }) => {
       </div>
       <div className="initiative__body">
         <p className="initiative__body--description">{description}</p>
-        {/* <a href={linkToJoinForm} className="initiative__button">
+        <a href={linkToPage} target="_blank" className="initiative__button">
           Join <ArrowRight />
-        </a> */}
+        </a>
         {/* <Link to={linkToPage}><span className="initiative__button">Join</span> <ArrowRight /></Link> */}
-        <Link to={linkToPage} className="initiative__button">Join <ArrowRight /></Link>
+        {/* <Link to={linkToPage} className="initiative__button">Join <ArrowRight /></Link> */}
       </div>
     </div>
   );
