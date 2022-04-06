@@ -8,12 +8,7 @@ const NextSteps = () => {
       <div className="nextsteps__container">
         <div className="nextsteps__textual">
           <p className="nextsteps__textual--text">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-            dignissimos voluptate et, facilis cupiditate eaque repellendus
-            aperiam ratione quasi dolor incidunt ea fuga necessitatibus modi
-            laudantium, sapiente at ut pariatur atque sunt hic. Deserunt
-            corporis itaque id eveniet voluptatem, aliquid officia iusto quis
-            vel similique.
+            Your feedback really matters to us, please feel free to send in your suggestions or critics, we are also ready to help in case you are finding any difficulty anywhere, also, feel free to join various communities and projects by Clima as we fight the negative climate chang effects.
           </p>
 
           <a href="/" className="nextsteps__textual--button">

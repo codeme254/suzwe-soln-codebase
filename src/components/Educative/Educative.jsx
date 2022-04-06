@@ -3,34 +3,44 @@ import Title from "./../Typography/Title";
 import EducativeCard from "./EducativeCard";
 import img from "./../../assets/images/disease.jpg";
 
+import pestImg from "./../../assets/images/Pesticides/General.jpg";
+
+import fertImg from "./../../assets/images/Fertilizers/General.jpg";
+
+import fungiImg from "./../../assets/images/Fungicides/General.jpg";
+
 const Educative = () => {
   const educatives = [
     {
-      image: img,
+      image: pestImg, 
       title: "pesticides",
       preText:
-        "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+        "A pesticide is a substance used for destroying insects or other organisms harmful to cultivated plants or to animals",
+      learnPageLink: "/pesticides",
     },
     {
-      image: img,
+      image: fertImg,
       title: "fertilizers",
       preText:
-        "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+        "A fertilizer is a chemical or natural substance added to soil or land to increase its fertility",
+      learnPageLink: "/fertilizers",
     },
     {
-      image: img,
+      image: fungiImg,
       title: "fungicides",
       preText:
-        "Sometime it is good to learn about these thing in order to save nature from harm",
-      learnPageLink: "http://google.com",
+        "A fungicide is a chemical that destroys fungus.",
+      learnPageLink: "/fungicides",
     },
   ];
 
   return (
     <section className="educative-section">
-      <Title mainTitle="Educate the community" subTitle="What we do" />
+      <Title
+        class="whiteTitle"
+        mainTitle="Educate the community"
+        subTitle="What we do"
+      />
 
       <div className="educatives__container">
         {educatives.map((el, i) => (
