@@ -23,7 +23,7 @@ html {
   --color-primary-dark: #28b485;
   --color-recom-green: #16db65;
   --color-primary-jungle-green: #0d2818;
-  --color-white: #ccc;
+
   --color-white-light: #f0f0f0;
   --color-black-light: #333;
   --color-white: #fff;
@@ -458,7 +458,7 @@ body {
 }
 
 .goal__description {
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (max-width: 750px) {
@@ -509,10 +509,18 @@ body {
   padding: 3rem;
   margin-block-start: 3rem;
   /* background-color: #c4c4c4; */
-  background: linear-gradient(rgba(3, 3, 3, 0.8), rgba(192, 72, 72, 0.8)),
+  background: linear-gradient(rgba(22, 22, 22, 0.8), rgba(8, 8, 8, 0.8)),
     url("/styling/farming.jpg");
-  backdrop-filter: blur(50px);
 }
+
+.educative-section .title {
+  border-color: var(--color-white);
+}
+.educative-section .title .title__main,
+.educative-section .title .title__sub {
+  color: var(--color-white);
+}
+
 .educative-parent {
   width: 35rem;
   /* perspective: 100rem; */

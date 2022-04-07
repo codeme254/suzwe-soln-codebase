@@ -29,7 +29,11 @@ const RecommendationsAndGoals = () => {
   return (
     // when a radom place outside the formis clicked, the form is supposed to hide and that is why am attaching the function for hiding the form on the body holding the form
     <section className="recom-goals">
-      <Title mainTitle="Farming Tips" subTitle="Get new farming tips" />
+      <Title
+        style={{ color: "#fff" }}
+        mainTitle="Farming Tips"
+        subTitle="Get new farming tips"
+      />
       <div className="recom-goals__wrapper">
         <div className="form__wrapper--main">
           <p className=" recom-goals__statement">
