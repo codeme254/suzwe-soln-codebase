@@ -19,32 +19,17 @@ import communityImg from "./../../assets/images/community.jpg";
 const CommunityInitiativePage = () => {
   const goalsArray = [
     {
-      title: "first goal",
+      title: "Ending Zero Hunger",
+      description:
+        "We really want to achieve this goal and we mean it, we really really want to meet it",
+    },
+    {
+      title: "Reducing Climate Change",
       description:
         "we really want to achieve this goal and we mean it, we really really want to meet it",
     },
     {
-      title: "first goal",
-      description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
-    },
-    {
-      title: "first goal",
-      description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
-    },
-    {
-      title: "first goal",
-      description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
-    },
-    {
-      title: "first goal",
-      description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
-    },
-    {
-      title: "first goal",
+      title: "Sustainable agriculture",
       description:
         "we really want to achieve this goal and we mean it, we really really want to meet it",
     },
