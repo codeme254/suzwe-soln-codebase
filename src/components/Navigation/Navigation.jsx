@@ -7,7 +7,6 @@ import {
 
 const Navigation = () => {
   const navRef = useRef(null);
-  const popUpRef = useRef(null);
   const handleNav = () => {
     console.log("handling the navigation");
     navRef.current.classList.toggle("nav__flipper");

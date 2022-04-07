@@ -1,7 +1,5 @@
 import React from "react";
 import Title from "./../Typography/Title";
-import communityImg from "./../../assets/images/community.jpg";
-
 import zeroHunger from "./../../assets/images/Intiatives/ZeroHunger.jpg";
 
 import irrigation from "./../../assets/images/Intiatives/Irrigation.jpg";

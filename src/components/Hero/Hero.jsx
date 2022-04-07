@@ -11,7 +11,7 @@ const Hero = () => {
   const heroTitles = [
     {
       image: industrialImg,
-      title: "Climate change.",
+      title: "Africa is becoming a .",
       subtitle: "The everest of all problems that humanity is facing",
     },
     {

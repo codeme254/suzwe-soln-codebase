@@ -1,7 +1,6 @@
 import React from "react";
 import Title from "./../Typography/Title";
 import EducativeCard from "./EducativeCard";
-import img from "./../../assets/images/disease.jpg";
 
 import pestImg from "./../../assets/images/Pesticides/General.jpg";
 
@@ -12,7 +11,7 @@ import fungiImg from "./../../assets/images/Fungicides/General.jpg";
 const Educative = () => {
   const educatives = [
     {
-      image: pestImg, 
+      image: pestImg,
       title: "pesticides",
       preText:
         "A pesticide is a substance used for destroying insects or other organisms harmful to cultivated plants or to animals",
@@ -28,8 +27,7 @@ const Educative = () => {
     {
       image: fungiImg,
       title: "fungicides",
-      preText:
-        "A fungicide is a chemical that destroys fungus.",
+      preText: "A fungicide is a chemical that destroys fungus.",
       learnPageLink: "/fungicides",
     },
   ];
