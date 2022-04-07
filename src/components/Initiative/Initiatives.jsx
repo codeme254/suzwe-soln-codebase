@@ -40,7 +40,7 @@ const Initiatives = () => {
             id={i}
             image={el.image}
             description={el.description}
-            linkToPage={el.linkToJoinForm}
+            linkToPage={el.linkToPage}
           />
         ))}
       </div>
