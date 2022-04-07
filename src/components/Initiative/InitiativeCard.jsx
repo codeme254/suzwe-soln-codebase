@@ -13,7 +13,12 @@ const InitiativeCard = ({ image, description, linkToPage }) => {
       </div>
       <div className="initiative__body">
         <p className="initiative__body--description">{description}</p>
-        <a href={linkToPage} target="_blank" className="initiative__button">
+        <a
+          href={linkToPage}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="initiative__button"
+        >
           Join <ArrowRight />
         </a>
         {/* <Link to={linkToPage}><span className="initiative__button">Join</span> <ArrowRight /></Link> */}

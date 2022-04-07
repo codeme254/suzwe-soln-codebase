@@ -14,8 +14,6 @@ import irrigation from "./../../assets/images/Intiatives/Irrigation.jpg";
 
 import ecological from "./../../assets/images/Intiatives/EcologicalFarming.jpg";
 
-import communityImg from "./../../assets/images/community.jpg";
-
 const CommunityInitiativePage = () => {
   const goalsArray = [
     {
