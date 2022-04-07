@@ -8,17 +8,17 @@ const RecommendationsAndGoals = () => {
     {
       goal: "Increase your produce",
       description:
-        "Suzwe is targetting to bring the world together and raise Ksh.8 Million by the end of the year 2022 to help feeding areas affected by climate change especially the Nothern parts of Kenya.",
+        "Help us help you.  We shall help you sell your produce to firms search as Twiga foods.Promoting our local agriculture is  our  mission",
     },
     {
       goal: "Making Fertilizers more acessible",
       description:
-        "Suzwe is targetting to bring the world together and raise Ksh.12 Million by the end of the year 2022 to help set up irrigation schemes in dry areas and  plant trees there.",
+        "Get fertilizers at  subsidized rates. We  wilol deliver  it at your door step . Contact us for more information ",
     },
     {
-      goal: "Saidia mkulima mwenzako",
+      goal: "Help your fellow farmer ",
       description:
-        "We are planning to bring every single kenyan together each and every month to donate Ksh.1 which is an equivalent of 0.0079 us dollar to feed kids in dry areas and set up farming in those areas, we also intend to build houses for areas affected by floods.",
+        "Take pqart in community intiatives to  bring change to  your community",
     },
     {
       goal: "Efficient farming recommendations",
@@ -29,10 +29,17 @@ const RecommendationsAndGoals = () => {
   return (
     // when a radom place outside the formis clicked, the form is supposed to hide and that is why am attaching the function for hiding the form on the body holding the form
     <section className="recom-goals">
-      <Title mainTitle="Recommendations" subTitle="What you should use" />
+      <Title
+        style={{ color: "#fff" }}
+        mainTitle="Farming Tips"
+        subTitle="Get new farming tips"
+      />
       <div className="recom-goals__wrapper">
-
         <div className="form__wrapper--main">
+          <p className=" recom-goals__statement">
+            Let us give you personal recommendations on what you should do and
+            use.
+          </p>
           <Form />
         </div>
 

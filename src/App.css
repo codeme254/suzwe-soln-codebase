@@ -23,7 +23,7 @@ html {
   --color-primary-dark: #28b485;
   --color-recom-green: #16db65;
   --color-primary-jungle-green: #0d2818;
-  --color-white: #ccc;
+
   --color-white-light: #f0f0f0;
   --color-black-light: #333;
   --color-white: #fff;
@@ -109,7 +109,7 @@ body {
   z-index: 100;
 }
 
-.page-root-fix-header-2 .nav{
+.page-root-fix-header-2 .nav {
   margin-bottom: 8rem;
 }
 
@@ -121,12 +121,12 @@ body {
   letter-spacing: 0.8px;
 }
 
-.nav_brand{
+.nav_brand {
   margin-right: auto;
 }
 
-.nav__image{
-  --size:3.5rem;
+.nav__image {
+  --size: 4rem;
   width: var(--size);
   height: var(--size);
 }
@@ -287,32 +287,35 @@ body {
   position: relative;
 }
 
-.form__wrapper--main{
+.recom-goals__statement {
+  font-size: 1em;
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+.form__wrapper--main {
   width: 48vw;
   margin-right: 2vw;
 }
 
 .recommendation__form {
   position: relative !important;
-  width: 100%;
+  width: 80%;
+  padding: 1.5rem;
   background-color: #fff;
   transform-origin: top right;
   transition: all 0.5s ease;
-  background-image: url(./assets/images/industrial.jpg);
-  background-position: center;
-  background-size: cover;
   border-radius: 20px;
-  box-shadow: 0 0 4px;
+  /* box-shadow: 0 0 4px; */
   overflow: hidden;
 }
 
 .recommendation__form--controlls {
-  padding: 1rem 5rem 1rem 1rem;
+  /* padding: 1rem 5rem 1rem 1rem; */
   background-color: var(--color-white);
   border-radius: 20px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  overflow-y: scroll;
+  /* overflow-y: scroll; */
   overflow-x: hidden;
 }
 
@@ -338,7 +341,7 @@ body {
 }
 
 .form__group--label {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 600;
   text-transform: capitalize;
 }
@@ -353,7 +356,7 @@ body {
 .form__group--text-input {
   outline: none;
   border: none;
-  padding: 1rem 0;
+  padding: 0.5rem 0;
   border-bottom: 2px solid var(--color-recom-green);
   font-weight: 500;
   text-transform: capitalize;
@@ -369,10 +372,9 @@ body {
   height: 100%;
 }
 
-
 .recom-goals__wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   margin-top: 6rem;
 }
@@ -411,9 +413,9 @@ body {
   border: none;
   outline: none;
   background-color: transparent;
-  padding: 1rem 1.5rem;
-  margin: 2rem 0;
-  font-size: 2rem;
+  padding: 0.5rem 1.5rem;
+  margin: 1rem 0;
+  font-size: 1.8rem;
   font-weight: 500;
   border: 2px solid var(--color-recom-green);
   cursor: pointer;
@@ -456,7 +458,7 @@ body {
 }
 
 .goal__description {
-  text-align: justify;
+  text-align: left;
 }
 
 @media screen and (max-width: 750px) {
@@ -486,17 +488,12 @@ body {
 }
 
 @media screen and (max-width: 900px) {
-  .form__wrapper--main{
+  .form__wrapper--main {
     width: 98vw;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
   }
   .recommendation__form--controlls {
-    width: 100%;
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.6),
-        rgba(255, 255, 255, 0.6)
-      ),
-      url(./assets/images/industrial.jpg);
+    width: 98vw;
     display: flex;
     flex-direction: column;
   }
@@ -512,10 +509,18 @@ body {
   padding: 3rem;
   margin-block-start: 3rem;
   /* background-color: #c4c4c4; */
-  background: linear-gradient(rgba(3, 3, 3, 0.8), rgba(192, 72, 72, 0.8)),
+  background: linear-gradient(rgba(22, 22, 22, 0.8), rgba(8, 8, 8, 0.8)),
     url("/styling/farming.jpg");
-  backdrop-filter: blur(50px);
 }
+
+.educative-section .title {
+  border-color: var(--color-white);
+}
+.educative-section .title .title__main,
+.educative-section .title .title__sub {
+  color: var(--color-white);
+}
+
 .educative-parent {
   width: 35rem;
   /* perspective: 100rem; */
@@ -703,7 +708,7 @@ body {
 }
 
 .nextsteps__textual--text {
-  font-size: 2rem;
+  font-size: 1em;
   margin-bottom: 4rem;
   line-height: 1.5;
   text-align: justify;
@@ -744,7 +749,8 @@ body {
 
 .form__group {
   margin-bottom: 3rem;
-  width: 80%;
+  margin-right: 1rem;
+  width: 90%;
 }
 
 .form__group--label--nex-steps {
@@ -1023,7 +1029,7 @@ body {
 }
 
 /* The educative section */
-.educative-hero{
+.educative-hero {
   width: 90vw;
   margin: 4rem auto;
   padding: 2rem 0;
@@ -1034,20 +1040,20 @@ body {
   align-items: center;
 }
 
-.educative-hero__title{
+.educative-hero__title {
   font-size: 5rem;
   color: #000;
   margin-bottom: 2rem;
   text-transform: capitalize;
 }
 
-.educative-hero__text{
+.educative-hero__text {
   font-size: 1.7rem;
   text-align: center;
   margin-bottom: 3rem;
 }
 
-.educative-hero__button{
+.educative-hero__button {
   font-size: 1.8rem;
   padding: 1rem 1.5rem;
   border: none;
@@ -1060,13 +1066,13 @@ body {
   cursor: pointer;
 }
 
-.educative-section__tips{
+.educative-section__tips {
   width: 85vw;
   margin: 1rem auto;
   margin-bottom: 3rem;
 }
 
-.educative-section__tips-container{
+.educative-section__tips-container {
   margin-top: 3rem;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));

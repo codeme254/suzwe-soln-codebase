@@ -1,6 +1,25 @@
-export const Data = [{}];
+export const plantData = [
+  {
+    name: "Maize",
+  },
+  {
+    name: "Tomatoes",
+  },
+  {
+    name: "Potatoes",
+  },
+];
 
-export const PestsData = [
+export const pestData = [
+  "White flies ",
+  ,
+  "Tuta Absoluta",
+  "Thrips",
+  "Aphids",
+  "Nematodes",
+  "Fall army worm",
+];
+export const PesticideData = [
   {
     pest: "Nematodes",
     plant: ["Tomatoes", "Potatoes"],
@@ -9,7 +28,7 @@ export const PestsData = [
     preHarvestInterval: 0,
     rate: "8-20 ml /ha",
     modeOfAction: "Contact",
-  }, 
+  },
   {
     pest: "Cut Worms",
     plant: ["Tomatoes", "Potatoes", "Maize"],
@@ -29,7 +48,7 @@ export const PestsData = [
     modeOfAction: "Systemic",
   },
   {
-    pest: "",
+    pest: "Tuta absoluta",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "flubendiamide",
     pesticides: "Belt",
@@ -38,7 +57,7 @@ export const PestsData = [
     modeOfAction: "Larvicidal",
   },
   {
-    pest: "",
+    pest: "Tuta absoluta",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "Indoxicab",
     pesticides: "Indox",
@@ -47,7 +66,7 @@ export const PestsData = [
     modeOfAction: "Contact",
   },
   {
-    pest: "",
+    pest: "Fall Army worm",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "Amamectin benzoate",
     pesticides: "Escort",
@@ -86,7 +105,7 @@ export const FungicidesData = [
     modeOfAction: "Curative",
   },
   {
-    disease: "",
+    disease: "Blights Early/late",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "dimethomorph",
     fungicides: "Bigo",
@@ -95,7 +114,7 @@ export const FungicidesData = [
     modeOfAction: "Curative",
   },
   {
-    disease: "",
+    disease: "Blights Early/late",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "chlorothalonil",
     fungicides: "Daconil",
@@ -104,7 +123,7 @@ export const FungicidesData = [
     modeOfAction: "Preventative",
   },
   {
-    disease: "",
+    disease: "Blights Early/late",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "Famaxadone+cymoxanil",
     fungicides: "Equation pro",
@@ -113,7 +132,7 @@ export const FungicidesData = [
     modeOfAction: "Preventative",
   },
   {
-    disease: "",
+    disease: "Blights Early/late",
     plant: ["Tomatoes", "Potatoes"],
     activeIngredient: "propineb",
     fungicides: "Miraz ",
