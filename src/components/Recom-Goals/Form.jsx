@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import { PesticideData, pestData, plantData } from "../../reusable/data.const";
-import avartarImg from "./../../assets/images/industrial.jpg";
 
 const Form = () => {
+  const [number, setPhoneNumber] = useState();
+  const [mail, setMail] = useState();
   const plants = plantData;
   const pestDetails = pestData;
   const pesticidesData = PesticideData;
+
+  const formRef = useRef(null);
+  const confirmationRef = useRef(null);
+
+  const recordPhoneNo = (e) => {
+    // setPhoneNumber({number: e.target.value})
+    setPhoneNumber(e.target.value);
+  };
+
+  const recordMail = (e) => {
+    setMail(e.target.value);
+  };
+
+  const email = mail;
+  const tel = number;
+
+  const handleConfirmation = () => {
+    formRef.current.classList.add("hider");
+    confirmationRef.current.classList.remove("hider");
+  };
+
+  const handleAnotherResponse = () => {
+    formRef.current.classList.remove("hider");
+    confirmationRef.current.classList.add("hider");
+  };
   return (
     <>
-      <form action="#" className="recommendation__form">
+      <form action="#" className="recommendation__form" ref={formRef}>
         <div className="recommendation__form--controlls">
           {/* <img
                 src={avartarImg}
@@ -126,6 +152,8 @@ const Form = () => {
                 className="form__group--text-input"
                 placeholder="example@gmail.com"
                 id="email"
+                onChange={recordMail}
+                required
               />
             </div>
             <div className="form__group">
@@ -137,6 +165,8 @@ const Form = () => {
                 className="form__group--text-input"
                 placeholder="0723456789"
                 id="disease-seen"
+                onChange={recordPhoneNo}
+                required
               />
             </div>
           </div>
@@ -145,11 +175,24 @@ const Form = () => {
             className="form__submit--button"
             type="submit"
             title="submit your response"
+            onClick={handleConfirmation}
           >
             Submit
           </button>
         </div>
       </form>
+      <div className="confirmation__container  hider" ref={confirmationRef}>
+        <p className="confirmation__text">
+          {email && tel
+            ? `Thank you for your response, please check the inbox of ${email} or the messages inbox of ${tel} for your recommendation.`
+            : !tel && !mail
+            ? `Please provide either an email or a phone number to receive recommendation.`
+            : !email ? `Check the inbox of ${tel} messages for recommendations.` : !tel ? `Check the inbox of ${email} email messages for confirmation.`: ``}
+        </p>
+        <button className="submit__another" onClick={handleAnotherResponse}>
+          Submit another response
+        </button>
+      </div>
     </>
   );
 };

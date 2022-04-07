@@ -48,6 +48,10 @@ html {
   letter-spacing: 1.2px;
 }
 
+.hider{
+  display: none;
+}
+
 @media screen and (max-width: 900px) {
   .title {
     text-align: center;
@@ -359,7 +363,6 @@ body {
   padding: 0.5rem 0;
   border-bottom: 2px solid var(--color-recom-green);
   font-weight: 500;
-  text-transform: capitalize;
 }
 
 .form__flex {
@@ -428,6 +431,27 @@ body {
 .form__submit--button:hover {
   background-color: var(--color-recom-green);
   color: var(--color-white);
+}
+
+.confirmation__text{
+  font-size: 3rem;
+  width: 80%;
+  text-align: justify;
+  margin-bottom: 2rem;
+}
+
+.submit__another{
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--color-recom-green);
+  background-color: transparent;
+  color: var(--color-recom-green);
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-weight: 500;
+  cursor: pointer;
 }
 
 .goals {
