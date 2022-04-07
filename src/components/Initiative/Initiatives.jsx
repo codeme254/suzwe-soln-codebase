@@ -1,7 +1,5 @@
 import React from "react";
 import Title from "./../Typography/Title";
-import communityImg from "./../../assets/images/community.jpg";
-
 import zeroHunger from "./../../assets/images/Intiatives/ZeroHunger.jpg";
 
 import irrigation from "./../../assets/images/Intiatives/Irrigation.jpg";
@@ -15,21 +13,19 @@ const Initiatives = () => {
       image: zeroHunger,
       description:
         "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
-      linkToJoinForm:
-        "/https://www.actionagainsthunger.org/countries/africa/kenya",
+      linkToPage: "/mandera-irrigation-project",
     },
     {
       image: irrigation,
       description:
         "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
-      linkToJoinForm:
-        "https://farmbizafrica.com/machinery/1912-drip-kit-saves-over-70-per-cent-water-in-kitchen-garden-irrigation",
+      linkToPage: "/mandera-irrigation-project",
     },
     {
       image: ecological,
       description:
         "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
-      linkToJoinForm: "https://www.greenpeace.org/africa/en/tag/farming/",
+      linkToPage: "/mandera-irrigation-project",
     },
   ];
   return (
@@ -42,7 +38,7 @@ const Initiatives = () => {
             id={i}
             image={el.image}
             description={el.description}
-            linkToPage={el.linkToJoinForm}
+            linkToPage={el.linkToPage}
           />
         ))}
       </div>

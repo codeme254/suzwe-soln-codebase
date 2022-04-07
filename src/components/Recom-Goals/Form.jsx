@@ -1,6 +1,5 @@
 import React from "react";
 import { PesticideData, pestData, plantData } from "../../reusable/data.const";
-import avartarImg from "./../../assets/images/industrial.jpg";
 
 const Form = () => {
   const plants = plantData;

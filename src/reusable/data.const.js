@@ -12,7 +12,6 @@ export const plantData = [
 
 export const pestData = [
   "White flies ",
-  ,
   "Tuta Absoluta",
   "Thrips",
   "Aphids",

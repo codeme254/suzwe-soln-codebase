@@ -7,7 +7,6 @@ import {
 
 const Navigation = () => {
   const navRef = useRef(null);
-  const popUpRef = useRef(null);
   const handleNav = () => {
     console.log("handling the navigation");
     navRef.current.classList.toggle("nav__flipper");
@@ -69,23 +68,9 @@ const Navigation = () => {
             </div>
           </li>
           <li className="nav__item" onmouseout={handleHoverOut}>
-            <a href="/" className="nav__item--link">
+            <a href="/mandera-irrigation-project" className="nav__item--link">
               initiative
             </a>
-            <div className="nav__popover">
-              <a href="/" className="nav__popover--link">
-                Initiative 1
-              </a>
-              <a href="/" className="nav__popover--link">
-                Initiative 2
-              </a>
-              <a href="/" className="nav__popover--link">
-                Initiative 3
-              </a>
-              <a href="/" className="nav__popover--link">
-                Initiative 4
-              </a>
-            </div>
           </li>
         </ol>
       </nav>

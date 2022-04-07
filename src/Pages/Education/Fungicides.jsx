@@ -1,19 +1,31 @@
 import React from "react";
 import Educative from "../Educative/Educative";
-import { FungicidesData } from './../../reusable/data.const'
-
+import { FungicidesData } from "./../../reusable/data.const";
 
 const FungicidesEducation = () => {
-  const exp = []
+  const exp = [];
 
   FungicidesData.map((el, i) => {
+    let objTitle = { title: el.fungicides, id: el.i };
     let obj = {
-      title: el.disease || 'deadly disease',
-      description: `${el.disease || "deadly disease"} is a disease that attacks ${el.plant}, it is mainly. It is made up of ${el.activeIngredient}. To deal with ${el.disease || "deadly disease"}, You will need ${el.fungicides} which is applied at the rate of ${el.rate}. ${el.fungicides} will help your plants through ${el.modeOfAction}. If you need help, press the get recommendation button above and we will be there to help.`
-    }
-    exp.push(obj)
-    return
-  })
+      title: el.disease || "deadly disease",
+      description: `${el.disease ||
+        "deadly disease"} is a disease that attacks ${
+        el.plant
+      }, it is mainly. It is made up of ${
+        el.activeIngredient
+      }. To deal with ${el.disease || "deadly disease"}, You will need ${
+        el.fungicides
+      } which is applied at the rate of ${el.rate}. ${
+        el.fungicides
+      } will help your plants through ${
+        el.modeOfAction
+      }. If you need help, press the get recommendation button above and we will be there to help.`,
+    };
+    let mainObject = Object.assign(objTitle, obj);
+    exp.push(mainObject);
+    return mainObject;
+  });
   return (
     <Educative
       heading="fungicides"

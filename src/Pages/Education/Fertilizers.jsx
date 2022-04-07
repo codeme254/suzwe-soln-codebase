@@ -4,8 +4,8 @@ import { fertlizerData } from "./../../reusable/data.const";
 
 const FertilizersEducation = () => {
   const exp = [];
-
   fertlizerData.map((el, i) => {
+    let objTitle = { title: el.fertilizer, id: el.i };
     let obj = {
       title: el.fertilizer,
       description: `${el.fertilizer} has ${el.composition.n}% nitrogen, ${
@@ -18,8 +18,9 @@ const FertilizersEducation = () => {
         el.fertilizer
       } at a  subsidized rate and delivered to your door step.`,
     };
-    exp.push(obj);
-    return;
+    let mainObject = Object.assign(objTitle, obj);
+    exp.push(mainObject);
+    return mainObject;
   });
 
   return (

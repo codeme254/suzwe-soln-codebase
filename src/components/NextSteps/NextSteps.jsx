@@ -8,11 +8,19 @@ const NextSteps = () => {
       <div className="nextsteps__container">
         <div className="nextsteps__textual">
           <p className="nextsteps__textual--text">
-            Your feedback really matters to us, please feel free to send in your suggestions or critics, we are also ready to help in case you are finding any difficulty anywhere, also, feel free to join various communities and projects by Clima as we fight the negative climate chang effects.
+            Your feedback really matters to us, please feel free to send in your
+            suggestions or critics, we are also ready to help in case you are
+            finding any difficulty anywhere, also, feel free to join various
+            communities and projects by Clima as we fight the negative climate
+            chang effects.
           </p>
 
-          <a href="/" className="nextsteps__textual--button">
-            Get in touch with us
+          <a
+            target="_blank"
+            href="https://app.powerbi.com/links/QHq_ltxnZs?ctid=84c31ca0-ac3b-4eae-ad11-519d80233e6f&pbi_source=linkShare"
+            className="nextsteps__textual--button"
+          >
+            View our report
           </a>
         </div>
         <div className="nextsteps__form">

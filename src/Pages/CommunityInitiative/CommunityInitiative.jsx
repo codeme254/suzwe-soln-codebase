@@ -8,53 +8,53 @@ import InitiativeCTA from "./InitiativeCTA";
 import OtherInitiatives from "./OtherInitiatives";
 import CommunityInitiativeFooter from "./CommunityInitiativeFooter";
 
-import communityImg from './../../assets/images/community.jpg'
+import zeroHunger from "./../../assets/images/Intiatives/ZeroHunger.jpg";
+
+import irrigation from "./../../assets/images/Intiatives/Irrigation.jpg";
+
+import ecological from "./../../assets/images/Intiatives/EcologicalFarming.jpg";
+
+import communityImg from "./../../assets/images/community.jpg";
 
 const CommunityInitiativePage = () => {
-    const goalsArray = [
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-        {
-            title: "first goal",
-            description: "we really want to achieve this goal and we mean it, we really really want to meet it"
-        },
-    ]
+  const goalsArray = [
+    {
+      title: "Ending Zero Hunger",
+      description:
+        "We really want to achieve this goal and we mean it, we really really want to meet it",
+    },
+    {
+      title: "Reducing Climate Change",
+      description:
+        "we really want to achieve this goal and we mean it, we really really want to meet it",
+    },
+    {
+      title: "Sustainable agriculture",
+      description:
+        "we really want to achieve this goal and we mean it, we really really want to meet it",
+    },
+  ];
 
-    const otherInitiatives = [
-        {
-            image: communityImg,
-            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
-            linkToPage: '/mandera-irrigation-project'
-        },
-        {
-            image: communityImg,
-            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
-            linkToPage: '/mandera-irrigation-project'
-        },
-        {
-            image: communityImg,
-            description: 'We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022',
-            linkToPage: '/mandera-irrigation-project'
-        },
-    ]
+  const otherInitiatives = [
+    {
+      image: ecological,
+      description:
+        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+      linkToPage: "/mandera-irrigation-project",
+    },
+    {
+      image: zeroHunger,
+      description:
+        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+      linkToPage: "/mandera-irrigation-project",
+    },
+    {
+      image: irrigation,
+      description:
+        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+      linkToPage: "/mandera-irrigation-project",
+    },
+  ];
   return (
     <div className="page-root page-root-fix-header">
       <Navigation />

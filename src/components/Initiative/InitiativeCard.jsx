@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import ArrowRight from "./Icons";
 
 const InitiativeCard = ({ image, description, linkToPage }) => {
