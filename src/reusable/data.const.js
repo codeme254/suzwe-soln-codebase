@@ -1,6 +1,25 @@
-export const Data = [{}];
+export const plantData = [
+  {
+    name: "Maize",
+  },
+  {
+    name: "Tomatoes",
+  },
+  {
+    name: "Potatoes",
+  },
+];
 
-export const PestsData = [
+export const pestData = [
+  "White flies ",
+  ,
+  "Tuta Absoluta",
+  "Thrips",
+  "Aphids",
+  "Nematodes",
+  "Fall army worm",
+];
+export const PesticideData = [
   {
     pest: "Nematodes",
     plant: ["Tomatoes", "Potatoes"],
@@ -9,7 +28,7 @@ export const PestsData = [
     preHarvestInterval: 0,
     rate: "8-20 ml /ha",
     modeOfAction: "Contact",
-  }, 
+  },
   {
     pest: "Cut Worms",
     plant: ["Tomatoes", "Potatoes", "Maize"],
