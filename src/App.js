@@ -19,7 +19,6 @@ function App() {
       <Educative />
       <Initiatives />
       <NextSteps />
-      <Footer />
       <CommunityInitiativeFooter />
     </div>
   );

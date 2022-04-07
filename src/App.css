@@ -126,7 +126,7 @@ body {
 }
 
 .nav__image {
-  --size: 3.5rem;
+  --size: 4rem;
   width: var(--size);
   height: var(--size);
 }
