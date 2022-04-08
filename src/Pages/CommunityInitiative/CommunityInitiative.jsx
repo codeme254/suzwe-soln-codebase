@@ -19,38 +19,38 @@ const CommunityInitiativePage = () => {
     {
       title: "Ending Zero Hunger",
       description:
-        "We really want to achieve this goal and we mean it, we really really want to meet it",
+        "One way to ensure food security is to rethink the role of irrigation in agriculture and food production.",
     },
-    {
-      title: "Reducing Climate Change",
-      description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
-    },
+    // {
+    //   title: "Reducing Climate Change",
+    //   description:
+    //     "we really want to achieve this goal and we mean it, we really really want to meet it",
+    // },
     {
       title: "Sustainable agriculture",
       description:
-        "we really want to achieve this goal and we mean it, we really really want to meet it",
+        "Sustainable irrigation methods are essential to farmers all over the world.",
     },
   ];
 
   const otherInitiatives = [
     {
-      image: ecological,
+      image: irrigation,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+        "To improve the livelihood of Mandera County residents through promotion of competitive agricultural production,  by end of 2022",
       linkToPage: "/mandera-irrigation-project",
     },
     {
       image: zeroHunger,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+        "Promoting sustainable agricultural, supporting small-scale farmers and equal access to land, technology and markets. It also requires international cooperation to ensure investment in infrastructure and technology to improve agricultural productivity.",
       linkToPage: "/mandera-irrigation-project",
     },
+
     {
-      image: irrigation,
+      image: ecological,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
-      linkToPage: "/mandera-irrigation-project",
+        "Ecological farming ensures healthy farming and healthy food for today and tomorrow, by protecting soil, water and climate. It promotes biodiversity and does not contaminate the environment with chemical inputs or genetically engineered plant varieties.",
     },
   ];
   return (

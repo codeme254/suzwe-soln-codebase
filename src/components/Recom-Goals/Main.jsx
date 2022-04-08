@@ -6,19 +6,19 @@ import Form from "./Form";
 const RecommendationsAndGoals = () => {
   const goals = [
     {
-      goal: "Increase your produce",
+      goal: "Reduce  gas emissions",
       description:
-        "Help us help you.  We shall help you sell your produce to firms search as Twiga foods.Promoting our local agriculture is  our  mission",
+        "Crop producers can change nutrient management practices to reduce emissions from  fertilizers, fungicides and pesticides",
     },
     {
-      goal: "Making Fertilizers more acessible",
+      goal: "Making Fertilizers more accessible",
       description:
-        "Get fertilizers at  subsidized rates. We  wilol deliver  it at your door step . Contact us for more information ",
+        "Get fertilizers at  subsidized rates. We  will deliver  it at your door step . Contact us for more information ",
     },
     {
       goal: "Help your fellow farmer ",
       description:
-        "Take pqart in community intiatives to  bring change to  your community",
+        "Take part in community initiatives to  bring change to  your community",
     },
     {
       goal: "Efficient farming recommendations",
