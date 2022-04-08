@@ -12,24 +12,37 @@ const Initiatives = () => {
     {
       image: zeroHunger,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+        "Promoting sustainable agricultural, supporting small-scale farmers and equal access to land, technology and markets. It also requires international cooperation to ensure investment in infrastructure and technology to improve agricultural productivity.",
       linkToPage: "/mandera-irrigation-project",
     },
     {
       image: irrigation,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
+        "To improve the livelihood of Mandera County residents through promotion of competitive agricultural production,  by end of 2022",
       linkToPage: "/mandera-irrigation-project",
     },
     {
       image: ecological,
       description:
-        "We are planning to start a walk for call to environmental protection, in the process, we will be rasing money to plant trees, we are targetting to plant upto 2000 treeas by the end of 2022",
-      linkToPage: "/mandera-irrigation-project",
+        "Ecological farming ensures healthy farming and healthy food for today and tomorrow, by protecting soil, water and climate. It promotes biodiversity and does not contaminate the environment with chemical inputs or genetically engineered plant varieties.",
     },
   ];
   return (
     <section className="initiatives">
+      <div className="view-report">
+        <h3 className="initiative-cta__text">
+          We organize community intiatives to help your fellow farmer
+        </h3>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://app.powerbi.com/links/QHq_ltxnZs?ctid=84c31ca0-ac3b-4eae-ad11-519d80233e6f&pbi_source=linkShare"
+          className="nextsteps__textual--button"
+        >
+          View our report
+        </a>
+      </div>
+
       <Title mainTitle="Community initiative" subTitle="Let's join hands" />
 
       <div className="all-initiatives-container">

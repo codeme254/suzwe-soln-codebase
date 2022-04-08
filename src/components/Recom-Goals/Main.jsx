@@ -6,19 +6,19 @@ import Form from "./Form";
 const RecommendationsAndGoals = () => {
   const goals = [
     {
-      goal: "Increase your produce",
+      goal: "Reduce  gas emissions",
       description:
-        "Help us help you.  We shall help you sell your produce to firms search as Twiga foods.Promoting our local agriculture is  our  mission",
+        "Crop producers can change nutrient management practices to reduce emissions from  fertilizers, fungicides and pesticides",
     },
     {
-      goal: "Making Fertilizers more acessible",
+      goal: "Making Fertilizers more accessible",
       description:
-        "Get fertilizers at  subsidized rates. We  wilol deliver  it at your door step . Contact us for more information ",
+        "Get fertilizers at  subsidized rates. We  will deliver  it at your door step . Contact us for more information ",
     },
     {
       goal: "Help your fellow farmer ",
       description:
-        "Take pqart in community intiatives to  bring change to  your community",
+        "Take part in community initiatives to  bring change to  your community",
     },
     {
       goal: "Efficient farming recommendations",
@@ -35,18 +35,19 @@ const RecommendationsAndGoals = () => {
         subTitle="Get new farming tips"
       />
       <div className="recom-goals__wrapper">
+        <div className="goals">
+          <Goal
+            title="Efficient farming recommendations"
+            description="We are planning to teach 3K+ farmers on efficient farming methods and best fertilizers and pesticides to use before the end of 2022."
+          />
+        </div>
+
         <div className="form__wrapper--main">
           <p className=" recom-goals__statement">
             Let us give you personal recommendations on what you should do and
             use.
           </p>
           <Form />
-        </div>
-
-        <div className="goals">
-          {goals.map((goal, i) => (
-            <Goal key={i} title={goal.goal} description={goal.description} />
-          ))}
         </div>
       </div>
     </section>

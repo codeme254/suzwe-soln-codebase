@@ -14,15 +14,6 @@ const NextSteps = () => {
             communities and projects by Clima as we fight the negative climate
             chang effects.
           </p>
-
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://app.powerbi.com/links/QHq_ltxnZs?ctid=84c31ca0-ac3b-4eae-ad11-519d80233e6f&pbi_source=linkShare"
-            className="nextsteps__textual--button"
-          >
-            View our report
-          </a>
         </div>
         <div className="nextsteps__form">
           <form action="#" className="form">
@@ -70,7 +61,7 @@ const NextSteps = () => {
             </div>
 
             <button className="form__button" type="submit">
-              Submit
+              Contact us
             </button>
           </form>
         </div>
