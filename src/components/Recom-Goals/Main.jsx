@@ -35,18 +35,19 @@ const RecommendationsAndGoals = () => {
         subTitle="Get new farming tips"
       />
       <div className="recom-goals__wrapper">
+        <div className="goals">
+          <Goal
+            title="Efficient farming recommendations"
+            description="We are planning to teach 3K+ farmers on efficient farming methods and best fertilizers and pesticides to use before the end of 2022."
+          />
+        </div>
+
         <div className="form__wrapper--main">
           <p className=" recom-goals__statement">
             Let us give you personal recommendations on what you should do and
             use.
           </p>
           <Form />
-        </div>
-
-        <div className="goals">
-          {goals.map((goal, i) => (
-            <Goal key={i} title={goal.goal} description={goal.description} />
-          ))}
         </div>
       </div>
     </section>

@@ -285,6 +285,33 @@ html {
   text-align: center;
   margin-top: 2rem;
 }
+/* end of her */
+
+/* goals p1 */
+.goals-l{
+  width: 95vw;
+  margin: 2rem auto;
+  margin-top: 8rem;
+}
+
+.goals-l__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 700px) {
+  .goals-l__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .goals-l__container >*{
+    margin-bottom: 2rem;
+  }
+}
+/* end of goals p1 */
 
 /* the recommendations and goals section */
 .recom-goals {
@@ -294,18 +321,23 @@ html {
 }
 
 .recom-goals__statement {
-  font-size: 1em;
-  margin-bottom: 1.5rem;
-  text-align: left;
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight:  bold;
+  letter-spacing: 1.3px;
 }
 .form__wrapper--main {
-  width: 48vw;
-  margin-right: 2vw;
+  width: 60vw;
+  margin-left: auto;
+  /* box-shadow: 0 0 1px; */
+  padding: 1rem;
+  border-radius: 3px;
 }
 
 .recommendation__form {
   position: relative !important;
-  width: 80%;
+  width: 100%;
   padding: 1.5rem;
   background-color: #fff;
   transform-origin: top right;
@@ -457,7 +489,7 @@ html {
 }
 
 .goals {
-  width: 50vw;
+  width: 30vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 4rem;
@@ -488,6 +520,9 @@ html {
 }
 
 @media screen and (max-width: 750px) {
+  body{
+    overflow-x: hidden;
+  }
   .recom-goals__wrapper {
     display: flex;
     flex-direction: column;
@@ -515,8 +550,9 @@ html {
 
 @media screen and (max-width: 900px) {
   .form__wrapper--main {
-    width: 98vw;
+    width: 90vw;
     margin: 0.5rem auto;
+    margin-left: 0;
   }
   .recommendation__form--controlls {
     width: 98vw;

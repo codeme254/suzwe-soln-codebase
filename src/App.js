@@ -1,8 +1,9 @@
 import "./App.css";
 // import "./style.css"
 import React from "react";
-import Hero from "./components/Hero/Hero";
 import Navigation from "./components/Navigation/Navigation";
+import Hero from "./components/Hero/Hero";
+import Goals from './components/Goals/Goals'
 import RecommendationsAndGoals from "./components/Recom-Goals/Main";
 import Educative from "./components/Educative/Educative";
 import Initiatives from "./components/Initiative/Initiatives";
@@ -15,6 +16,7 @@ function App() {
     <div className="App">
       <Navigation />
       <Hero />
+      <Goals />
       <RecommendationsAndGoals />
       <Educative />
       <Initiatives />
