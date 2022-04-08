@@ -30,6 +30,20 @@ const Initiatives = () => {
   ];
   return (
     <section className="initiatives">
+      <div className="view-report">
+        <h3 className="initiative-cta__text">
+          We organize community intiatives to help your fellow farmer
+        </h3>
+        <a
+          target="_blank"
+          rel="noopener noreferrer"
+          href="https://app.powerbi.com/links/QHq_ltxnZs?ctid=84c31ca0-ac3b-4eae-ad11-519d80233e6f&pbi_source=linkShare"
+          className="nextsteps__textual--button"
+        >
+          View our report
+        </a>
+      </div>
+
       <Title mainTitle="Community initiative" subTitle="Let's join hands" />
 
       <div className="all-initiatives-container">

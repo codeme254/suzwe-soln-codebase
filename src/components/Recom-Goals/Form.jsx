@@ -177,7 +177,7 @@ const Form = () => {
             title="submit your response"
             onClick={handleConfirmation}
           >
-            Submit
+            Get farming tips
           </button>
         </div>
       </form>
@@ -187,7 +187,11 @@ const Form = () => {
             ? `Thank you for your response, please check the inbox of ${email} or the messages inbox of ${tel} for your recommendation.`
             : !tel && !mail
             ? `Please provide either an email or a phone number to receive recommendation.`
-            : !email ? `Check the inbox of ${tel} messages for recommendations.` : !tel ? `Check the inbox of ${email} email messages for confirmation.`: ``}
+            : !email
+            ? `Check the inbox of ${tel} messages for recommendations.`
+            : !tel
+            ? `Check the inbox of ${email} email messages for confirmation.`
+            : ``}
         </p>
         <button className="submit__another" onClick={handleAnotherResponse}>
           Submit another response

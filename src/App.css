@@ -50,11 +50,11 @@ html {
   letter-spacing: 1.2px;
 }
 
-.hider{
+.hider {
   display: none;
 }
 
-.loader{
+.loader {
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -63,12 +63,12 @@ html {
   align-items: center;
 }
 
-.loader__motto{
+.loader__motto {
   font-size: 1.8rem;
   margin-top: 1.8rem;
 }
 
-.loader__heading{
+.loader__heading {
   font-size: 3rem;
   margin-bottom: 3rem;
   font-weight: bold;
@@ -308,26 +308,26 @@ html {
 /* end of her */
 
 /* goals p1 */
-.goals-l{
+.goals-l {
   width: 95vw;
   margin: 2rem auto;
   margin-top: 8rem;
 }
 
-.goals-l__container{
+.goals-l__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
 @media screen and (max-width: 700px) {
-  .goals-l__container{
+  .goals-l__container {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  .goals-l__container >*{
+  .goals-l__container > * {
     margin-bottom: 2rem;
   }
 }
@@ -344,7 +344,7 @@ html {
   font-size: 1.6rem;
   margin-bottom: 1rem;
   text-align: center;
-  font-weight:  bold;
+  font-weight: bold;
   letter-spacing: 1.3px;
 }
 .form__wrapper--main {
@@ -487,14 +487,14 @@ html {
   color: var(--color-white);
 }
 
-.confirmation__text{
+.confirmation__text {
   font-size: 3rem;
   width: 80%;
   text-align: justify;
   margin-bottom: 2rem;
 }
 
-.submit__another{
+.submit__another {
   font-size: 2rem;
   border: none;
   outline: none;
@@ -540,7 +540,7 @@ html {
 }
 
 @media screen and (max-width: 750px) {
-  body{
+  body {
     overflow-x: hidden;
   }
   .recom-goals__wrapper {
@@ -680,6 +680,16 @@ html {
 /* initiatives section */
 .initiatives {
   padding: 3rem;
+}
+
+.view-report {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 8rem;
+}
+
+.view-report h3 {
+  margin-bottom: 3rem;
 }
 
 .all-initiatives-container {
