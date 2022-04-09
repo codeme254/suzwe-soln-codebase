@@ -1,7 +1,6 @@
 import React from "react";
 import SingleHero from "./SingleHero";
 import Carousel from "react-material-ui-carousel";
-
 import chemicalImg from "../../assets/images/ChemicalFertilize.jpeg";
 import fertilizerImage from "../../assets/images/Fertilizer.jpg";
 import powerStation from "../../assets/images/power-station.jpg";
