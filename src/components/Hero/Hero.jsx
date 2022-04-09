@@ -6,7 +6,6 @@ import chemicalImg from "../../assets/images/ChemicalFertilize.jpeg";
 import fertilizerImage from "../../assets/images/Fertilizer.jpg";
 import powerStation from "../../assets/images/power-station.jpg";
 import environmentProtection from "../../assets/images/env-prot.jpg";
-import waste from "../../assets/images/waste.jpg";
 const Hero = () => {
   const heroTitles = [
     {
